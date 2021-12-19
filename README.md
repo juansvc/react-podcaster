@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Podcaster
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+@juan-vivanco
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+A React Frontend task for Inditex/ZARA.com of a web application to listen podcasts from Apple.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React JS / React Hooks](https://reactjs.org/)
+- [Axios](https://github.com/axios/axios) API calls
+- [Tailwind CSS](https://material-ui.com/) CSS Framework
+- [Debounce](https://usehooks.com/useDebounce/) prevent API calls from being fired on every keystroke
+- [Apple API](https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json) for podcasts data/media
+- [CORS Heroku](https://cors-anywhere.herokuapp.com/) access without CORS
+- [React Redux](https://react-redux.js.org/) formatting the project's code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Process
 
-### `npm test`
+I started off using `create-react-app` to build out the framework, then implementing layout, navigation and components. I decided to use a header, content and player(footer), since it was easier and more intuitive for users the details for episodes. For the reason that there is already a podacast details page and not send to another screen and returning every so often just to see the details of each episode and see the same sidebar. DRY, for UX reasons, for this reason other more I have put it in the list of episodes with a button to read more, as well as the episode counter was included in the container of the description of the podcast. As for design as it was free to choose without requirements and I really like dark mode in web apps I have done so, as points that remain to be done could be done light mode and more types of searches such as genres, playlists, etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `git clone` this repo and `cd` into the `podcaster` folder
+- `yarn install` to install dependencies
+- `yarn start` to run frontend app
