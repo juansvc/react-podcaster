@@ -12,7 +12,7 @@ import { BASE_URL } from '../utils/consts'
 
 const initalText = ' ';
 
-function SearchScreen() {
+function SearchScreen(props) {
   const [searchText, setSearchText] = useState(initalText)
   const [searchPodcastResults, setSearchPodcastResults] = useState({})
   const [searchEpisodeResults, setSearchEpisodeResults] = useState({})
@@ -46,6 +46,11 @@ function SearchScreen() {
       )
     }
   }, [debouncedText, searchText])
+
+  const { history } = props;
+  const handleClick = (collectionId) => {
+    history.push(`podcast/${collectionId}`)
+  }
 
   const handleSearchCancel = (e) => {
     setActiveSearchText('')
@@ -92,7 +97,8 @@ function SearchScreen() {
               podcastResultCount={podcastResultCount}
               podcastResults={podcastResults}
               episodeResults={episodeResults}
-              activeSearchText={activeSearchText} />
+              activeSearchText={activeSearchText}
+              handleClick={handleClick} />
             :
             <div className='text-white'>Please type something to start searching.</div>
         }
