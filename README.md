@@ -1,10 +1,8 @@
 # Podcaster
 
-@juan-vivanco
-
 ## Overview
 
-A React Frontend task for Inditex/ZARA.com of a web application to listen podcasts from Apple.
+A React web application to listen podcasts from Apple.
 
 ## Technologies Used
 
